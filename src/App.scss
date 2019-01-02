@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,3 +12,43 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+#editor {
+  width: 45vw;
+  height: 90vh;
+  max-height: 90vh;
+  padding: 20px 30px 0 20px;
+  font-size: 1.25em;
+}
+
+#preview {
+  float: right;
+  width: 50vw;
+  height: 90vh;
+  max-height: 90vh;
+  
+  code {
+    background-color: rgba(0,0,0,.05);
+  }
+
+  pre  {
+    background-color: rgba(0,0,0,.05);
+    padding: .5em;
+    overflow-x: auto;
+    white-space: pre;
+    border-radius: 3px;
+    margin-right: 20px;
+
+    code {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  blockquote {
+    color: rgba(0,0,0,.5);
+    padding-left: 1.5em;
+    border-left: 5px solid rgba(0,0,0,.1);
+  }
+
+}
+
