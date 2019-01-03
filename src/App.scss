@@ -13,27 +13,33 @@
   color: white;
 }
 
+#main-section {
+  display: flex;
+  // flex-direction: row;
+  flex-flow: row nowrap;
+  // justify-content: flex-start;
+  height: 100%;
+}
+
 #editor {
   width: 45vw;
-  height: 90vh;
-  max-height: 90vh;
-  padding: 20px 30px 0 20px;
+  min-height: 100%;
+  padding: 20px 30px 30px 20px;
   font-size: 1.25em;
 }
 
 #preview {
-  float: right;
-  width: 50vw;
-  height: 90vh;
-  max-height: 90vh;
-  
+  width: 55vw;
+  min-height: 100%;
+  padding: 20px 30px 30px 20px;
+
   code {
-    background-color: rgba(0,0,0,.05);
+    background-color: rgba(0, 0, 0, 0.05);
   }
 
-  pre  {
-    background-color: rgba(0,0,0,.05);
-    padding: .5em;
+  pre {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 0.5em;
     overflow-x: auto;
     white-space: pre;
     border-radius: 3px;
@@ -45,10 +51,22 @@
   }
 
   blockquote {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, 0.5);
     padding-left: 1.5em;
-    border-left: 5px solid rgba(0,0,0,.1);
+    border-left: 5px solid rgba(0, 0, 0, 0.1);
   }
 
+  table {
+    background-color: rgba(0, 0, 0, 0.01);
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td,
+  th {
+    border: 1px solid #dcdcdc;
+    padding: 8px 12px;
+  }
+  th {
+    border-bottom: double;
+  }
 }
-
