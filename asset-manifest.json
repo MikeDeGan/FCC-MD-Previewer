@@ -1,13 +1,13 @@
 {
-  "main.css": "/fcc-md-previewer/static/css/main.b19c1b42.chunk.css",
-  "main.js": "/fcc-md-previewer/static/js/main.f7a72a6c.chunk.js",
-  "main.js.map": "/fcc-md-previewer/static/js/main.f7a72a6c.chunk.js.map",
-  "static/js/1.1b9a0c60.chunk.js": "/fcc-md-previewer/static/js/1.1b9a0c60.chunk.js",
-  "static/js/1.1b9a0c60.chunk.js.map": "/fcc-md-previewer/static/js/1.1b9a0c60.chunk.js.map",
-  "runtime~main.js": "/fcc-md-previewer/static/js/runtime~main.493544a1.js",
-  "runtime~main.js.map": "/fcc-md-previewer/static/js/runtime~main.493544a1.js.map",
-  "static/css/main.b19c1b42.chunk.css.map": "/fcc-md-previewer/static/css/main.b19c1b42.chunk.css.map",
-  "index.html": "/fcc-md-previewer/index.html",
-  "precache-manifest.5d1b45071751ffb521f0b89e64647263.js": "/fcc-md-previewer/precache-manifest.5d1b45071751ffb521f0b89e64647263.js",
-  "service-worker.js": "/fcc-md-previewer/service-worker.js"
+  "main.css": "/FCC-MD-Previewer/static/css/main.b19c1b42.chunk.css",
+  "main.js": "/FCC-MD-Previewer/static/js/main.f7a72a6c.chunk.js",
+  "main.js.map": "/FCC-MD-Previewer/static/js/main.f7a72a6c.chunk.js.map",
+  "static/js/1.1b9a0c60.chunk.js": "/FCC-MD-Previewer/static/js/1.1b9a0c60.chunk.js",
+  "static/js/1.1b9a0c60.chunk.js.map": "/FCC-MD-Previewer/static/js/1.1b9a0c60.chunk.js.map",
+  "runtime~main.js": "/FCC-MD-Previewer/static/js/runtime~main.a4b65161.js",
+  "runtime~main.js.map": "/FCC-MD-Previewer/static/js/runtime~main.a4b65161.js.map",
+  "static/css/main.b19c1b42.chunk.css.map": "/FCC-MD-Previewer/static/css/main.b19c1b42.chunk.css.map",
+  "index.html": "/FCC-MD-Previewer/index.html",
+  "precache-manifest.0512aaebd3eae79e73b6ad53d1eb3fde.js": "/FCC-MD-Previewer/precache-manifest.0512aaebd3eae79e73b6ad53d1eb3fde.js",
+  "service-worker.js": "/FCC-MD-Previewer/service-worker.js"
 }
