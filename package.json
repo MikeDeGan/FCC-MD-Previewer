@@ -2,7 +2,7 @@
   "name": "fcc-md-previewer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mikedegan.github.io/fcc-md-previewer",
+  "homepage": "https://mikedegan.github.io/FCC-MD-Previewer",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "highlight.js": "^9.13.1",
