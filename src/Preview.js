@@ -7,7 +7,11 @@ const Preview = props => {
   // Custom renderer to handle a tags and code colorizing
   const renderer = new marked.Renderer();
   renderer.link = function(href, title, text) {
-    return `<a target="_blank" href="${href}">${text}</a>`;
+    if (href.charAt(0) === '#') {
+      return `<a href="${href}">${text}</a>`;
+    } else {
+      return `<a target="_blank" href="${href}">${text}</a>`;
+    }
   };
   renderer.code = (code, language) => {
     // Check whether the given language is valid for highlight.js.

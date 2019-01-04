@@ -1,10 +1,17 @@
+# Markdown Previewer
+
+This is my version of the Markdown Previewer project from [Free Code Camp](https://www.freecodecamp.org).
+
+This project was built using Create React App as described below.
+node-sass, marked and highlightjs libraries were also used.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

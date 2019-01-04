@@ -2,7 +2,9 @@
   "name": "fcc-md-previewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mikedegan.github.io/fcc-md-previewer",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "highlight.js": "^9.13.1",
     "marked": "^0.6.0",
     "node-sass": "^4.11.0",
@@ -11,6 +13,7 @@
     "react-scripts": "2.1.2"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

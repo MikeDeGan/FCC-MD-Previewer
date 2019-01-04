@@ -1,48 +1,64 @@
-const initialText = `# Welcome to my React Markdown Previewer!
+const initialText = `# Markdown Previewer Built With React
 
-## This is a sub-heading...
-### And here's some other cool stuff:
+## Type Markdown on the left and the HTML will be displayed on the right
+### Follow Github Flavored Markdown (GFM)
+
+---
+## Code blocks and inline code:
   
-Heres some code, \`<div></div>\`, between 2 backticks.
+Provide a language and code blocks will be colorized thanks to [Highlightjs](https://highlightjs.org/).
 
 \`\`\` javascript
-// this is multi-line code:
+renderer.code = (code, language) => {
+  // Check whether the given language is valid for highlight.js.
+  const validLang = !!(language && highlightjs.getLanguage(language));
+  // Highlight only if the language is valid.
+  const highlighted = validLang
+    ? highlightjs.highlight(language, code).value
+    : code;
+  // Render the highlighted code with \`hljs\` class.
+  return \`<pre><code class="hljs \${language}">\${highlighted}</code></pre>\`;
+};
 
-function anotherExample(firstLine, lastLine) {
-  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
-    return multiLineCode;
-  }
-}
 \`\`\`
-  
-You can also make text **bold**... whoa!
-Or _italic_.
-Or... wait for it... **_both!_**
-And feel free to go crazy ~~crossing stuff out~~.
 
-There's also [links](https://www.freecodecamp.com), and
-> Block Quotes!
+You can also use \`inline code\` if needed.
 
-And if you want to get really crazy, even tables:
+## Font decoration as well:
 
-Wild Header | Crazy Header | Another Header?
------------- | ------------- | ------------- 
-Your content can | be here, and it | can be here....
-And here. | Okay. | I think we get it.
+**Bold** _italic_ or **_both_**
 
-- And of course there are lists.
-  - Some are bulleted.
-     - With different indentation levels.
-        - That look like this.
+## Block Quotes:
 
+> This is a Block Quote
 
-1. And there are numbererd lists too.
-1. Use just 1s if you want! 
-1. But the list goes on...
-- Even if you use dashes or asterisks.
-* And last but not least, let's not forget embedded images:
+## GFM Tables:
 
-![React Logo w/ Text](https://goo.gl/Umyytc)
+|Col1 Header | Col2 Header | Col3 Header |
+|:------------|:----------:|-----------:| 
+|Left justified content | Centered content | Right justified content |
+
+## Numbered and Bulleted LIsts:
+
+1. Item one
+1. Item 2
+3. Item three
+
+- Just a list item.
+- Just another list item
+  - Indented list item
+
+## Links:
+
+[Free Code Camp](https://www.freecodecamp.org/)
+[Link within this document - Back to top](#markdown-previewer-built-with-react)
+
+## Images:
+
+![Random picture](https://source.unsplash.com/random/200x200)
+![Random picture](https://source.unsplash.com/random/400x200)
+![Random picture](https://source.unsplash.com/random/600x200)
+
 `;
 
 export default initialText;
